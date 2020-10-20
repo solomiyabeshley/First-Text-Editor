@@ -1,0 +1,352 @@
+html,
+body {
+  height: auto;
+  margin: 0;
+}
+
+#model {
+  height: 40%;
+  width: 900px;
+  margin-left: 200px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 3%;
+  padding-top: 5px;
+  background-color: rgb(233, 246, 255);
+}
+.two-butt {
+  margin-right: 230px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.button-edit {
+  height: 30px;
+  width: 50px;
+  margin-right: 5px;
+  background-color: rgb(255, 186, 13);
+  border: none;
+  border-radius: 5px;
+}
+.button-style {
+  height: 30px;
+  width: 50px;
+  background-color: rgb(6, 91, 141);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.output {
+  height: 300px;
+  width: 920px;
+  margin-left: 200px;
+  margin-top: 10px;
+  background-color: rgb(233, 246, 255);
+}
+#text-editor {
+  height: 200px;
+  width: 800px;
+  margin-left: 50px;
+}
+.button-add {
+  height: 30px;
+  width: 50px;
+  margin-left: 400px;
+  margin-top: 5px;
+  background-color: rgb(121, 7, 7);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.button-save {
+  height: 30px;
+  width: 50px;
+  background-color: rgb(2, 102, 52);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.style_radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+#styleEditor {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  margin-left: 30px;
+}
+.colorOfText {
+  height: 30px;
+  width: 100px;
+  margin-top: 20px;
+  background-color: grey;
+  color: white;
+  border: none;
+}
+.backgroundColor {
+  height: 30px;
+  width: 150px;
+  background-color: grey;
+  color: white;
+  border: none;
+}
+
+.tableBackground {
+  margin-left: 500px;
+  margin-top: -70px;
+}
+.tableText {
+  margin-left: 500px;
+  margin-top: -70px;
+}
+.q {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(20, 53, 53);
+}
+
+.w {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(67, 54, 124);
+}
+
+.e {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(75, 7, 7);
+}
+
+.r {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(39, 14, 34);
+}
+
+.t {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(150, 144, 65);
+}
+
+.y {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(134, 4, 4);
+}
+
+.u {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(177, 116, 3);
+}
+
+.i {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(7, 58, 19);
+}
+
+.o {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(26, 122, 122);
+}
+.a {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(182, 216, 203);
+}
+.s {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(214, 185, 231);
+}
+.d {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(255, 94, 134);
+}
+.f {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(255, 167, 240);
+}
+.g {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(235, 241, 150);
+}
+.h {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(216, 182, 182);
+}
+.j {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(255, 232, 98);
+}
+.k {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(171, 255, 154);
+}
+.l {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(134, 237, 255);
+}
+.choose {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: 50px;
+}
+.countTR,
+.countTD,
+.widthTD,
+.heightTD {
+  height: 30px;
+  width: 80%;
+  padding-left: 50px;
+  margin-left: 25px;
+  border-radius: 3px;
+  border: none;
+}
+
+.borderWidth {
+  height: 30px;
+  width: 80px;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: none;
+}
+#selectTypeOfBorder,
+#selectColorOfBorder {
+  height: 30px;
+  width: 90px;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: none;
+}
+
+#selectColorOfBorder {
+  height: 30px;
+  width: 80px;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: none;
+}
+
+#createList {
+  height: 50px;
+  width: 130px;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: none;
+  background-color: green;
+  color: white;
+}
+
+#countLi {
+  height: 40px;
+  width: 80%;
+  padding-left: 20px;
+  margin-left: 45px;
+  border-radius: 3px;
+  border: none;
+}
+
+#typeOfMarks {
+  height: 40px;
+  width: 82%;
+  padding-left: 20px;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: none;
+}
+
+.createTableBtn {
+  height: 50px;
+  width: 130px;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: none;
+  background-color: green;
+  color: white;
+}
+#textLIst {
+  height: 40px;
+  width: 80%;
+  padding-left: 20px;
+  margin-left: 15px;
+  border-radius: 3px;
+  border: none;
+}
+#reset {
+  height: 50px;
+  width: 130px;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(180, 6, 6);
+  color: white;
+}
+.listStyle {
+  margin-left: 50px;
+}
+#liCount {
+  height: 40px;
+  width: 80%;
+  padding-left: 20px;
+  margin-left: 45px;
+  border-radius: 3px;
+  border: none;
+  border-image: url();
+}
+#selectMark {
+  height: 30px;
+  width: 80px;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: none;
+}
+#ButtonCreateList {
+  height: 50px;
+  width: 130px;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: none;
+  background-color: green;
+  color: white;
+}
+option-value {
+  background-color: rgb(83, 14, 60);
+  color: rgb(83, 14, 60);
+}

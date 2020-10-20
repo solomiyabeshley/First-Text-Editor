@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <!-- тут вивід текстового редактора -->
+        <div class="firstDivInside" id="model">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <div class="two-butt">
+            <button class="button-edit">edit</button>
+            <button class="button-style">style</button>
+
+        </div>
+        <!-- тут вводимо дані -->
+        <div class="output">
+            <textarea id="text-editor" cols="30" rows="10"></textarea>
+            <button class="button-add" onclick="addTableList()">add</button>
+            <button class="button-save">save</button>
+
+
+            <!-- створюємо стилі для тексту -->
+            <div id="styleEditor">
+                <div class="style_radio">
+                    <b>Font size:</b>
+                   <input type="range" id="seek" name="seekbar" step="2" min="10" max="20" list="tickmarks">
+                   <datalist id="tickmarks">
+                        <option value="10" label="10px">
+                        <option value="12" label="12px">
+                        <option value="14" label="14px">
+                        <option value="16" label="16px">
+                        <option value="18" label="18px">
+                        <option value="20" label="20px">
+                    </datalist>
+                </div>
+                <div class="fontStyle">
+                    <b>Font family:</b>
+                    <select id="chooseFont" onchange="chooseFont(this)">
+                        <option>Choose option</option>
+                        <option>Cursive</option>
+                        <option>Fantasy</option>
+                        <option>Monospace</option>
+                        <option>Sens-serif</option>
+                        <option>Times New Roman</option>
+                        <option>Arial</option>
+                        <option>Arial Black</option>
+                        <option>Impact</option>
+                        <option>Lucida Sans Unicode</option>
+                        <option>Lucida Console</option>
+                    </select>
+                </div>
+                <div id="textColor">
+                    <b>Colors:</b>
+                    <button class="colorOfText">Color Of Text</button>
+                    <table class="tableText">
+                        <tr>
+                            <td class="a"></td>
+                            <td class="s"></td>
+                            <td class="d"></td>
+                        </tr>
+                        <tr>
+                            <td class="f"></td>
+                            <td class="g"></td>
+                            <td class="h"></td>
+                        </tr>
+                        <tr>
+                            <td class="j"></td>
+                            <td class="k"></td>
+                            <td class="l"></td>
+                        </tr>
+                    </table>
+                    <button class="backgroundColor">Background color</button>
+                    <table class="tableBackground">
+                        <tr>
+                            <td class="q"></td>
+                            <td class="w"></td>
+                            <td class="e"></td>
+                        </tr>
+                        <tr>
+                            <td class="r"></td>
+                            <td class="t"></td>
+                            <td class="y"></td>
+                        </tr>
+                        <tr>
+                            <td class="u"></td>
+                            <td class="i"></td>
+                            <td class="o"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="styleText">
+                    <b> Style:</b>
+                    <p></p><input type="checkbox" name="" id="textBold" onclick="textBold()">Bold text
+                    <input type="checkbox" name="" id="curveText" onclick="textCursive()">Cursive text</p>
+                </div>
+            </div>
+        </div>
+
+<!-- вибираємо що створити:список чи таблицю -->
+        <div id="chooseTableOrList">
+            <h1>Choose what you want:</h1>
+            <div class="choose">
+                <input type="radio" name="radio" id="checkTable">table
+                <input type="radio" name="radio" id="checkList">list </div>
+            <!-- формуємо табличку -->
+            <div id="stylesForTable">
+                <form id="myForm">
+                    <p>Count TR:<input type="text" class=" countTR" placeholder="Count TR"></p>
+                    <p>Count TD:<input type="text" class="countTD" placeholder="Count TD"></p>
+                    <h3>Add style to your table:</h3>
+                    <p>Widt of TD:<input type="text" class=" widthTD" placeholder="Widt of TD"></p>
+                    <p>Height of TD:<input type="text" class="heightTD" placeholder="Height of TD"></p>
+                    <p>Width of border:<input type="text" class="borderWidth" placeholder="Width"></p>
+                    <p>Type of Border:
+                        <select name="" id="selectTypeOfBorder"></p>
+                    <option value="solid">solid</option>
+                    <option value="dashed">dashed</option>
+                    <option value="dotted">dotted</option>
+                    <option value="double">double</option>
+                    </select>
+                    <p>Color of border:
+                        <select name="" id="selectColorOfBorder"></p>
+                    <option value="black">black</option>
+                    <option value="red">red</option>
+                    <option value="blue">blue</option>
+                    <option value="green">green</option>
+                    </select>
+                </form>
+                <button class="createTableBtn">Create table</button>
+                <button onclick="resetText()" id="reset">Reset</button>
+
+            </div>
+            <!-- Стиль для list -->
+            <div class="listStyle">
+                <form id="myForm">
+                    <p>Count LI: <input type="text" id="liCount" placeholder="Count LI"></p>
+                </form>
+                <p>Type of marks:
+                    <select name="selectMark" id="selectMark">
+                        <option value="sircle">sircle</option>
+                        <option value="disc">disc</option>
+                        <option value="square">square</option>
+                    </select></p>
+                <button id="ButtonCreateList">Create list</button>
+                <button onclick="resetText()" id="reset">Reset</button>
+            </div>
+        </div>
+
+        <script src="demo.js"></script>
+    </body>
+
+</html>
